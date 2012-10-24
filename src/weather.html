@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <title>Weather for Krono-Safe</title>
+        <style>
+            pre {font-family: "Courier New", Courier, mono; margin-left: 40pt}
+        </style>
+        <script type="text/javascript" src="./dist/jquery.min.js"></script> 
+        <script type="text/javascript" src="./dist/jquery.jqplot.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./dist/jquery.jqplot.css" />
+        <script type="text/javascript" src="./dist/plugins/jqplot.barRenderer.js"></script>
+        <script type="text/javascript" src="./dist/plugins/jqplot.categoryAxisRenderer.js"></script>
+        <script type="text/javascript" src="./dist/plugins/jqplot.pointLabels.js"></script>
+        <script type="text/javascript" src="./my_js_functions.js"></script>
+    </head>
+
+    <body>
+        <div id="search_area">
+            <form name="myform" id="myForm">
+                <b>City</b>: <input type="text" name="city"/><br />
+                <input type="submit" name="operation" onclick="document.pressed=this.value" value="search" id="mySubmit" />
+            </form>
+        </div>
+        <br/>
+        <b>Meteo stations:</b>
+        <div id="city_list">
+        </div>
+        <br/>
+        <b>Tendance météo</b>
+        <div id="weather_image">
+        </div>
+        <br/>
+        <b>Graph weather/city:</b>
+        <div id="chart1" style="height:400px;width:800px; "></div>
+    </body>
+</html>
